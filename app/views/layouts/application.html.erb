@@ -15,7 +15,7 @@
   <body style="background-image: url(/img/logo6.jpg); background-size: cover; height: 500px; background-attachment: fixed; background-repeat: no-repeat; background-position: top;">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #000000">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src="/img/smalllogo2.png" height="30" class="d-inline-block align-top" alt="">
           Triada
         </a>
@@ -25,10 +25,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+              <%= link_to 'Главная', root_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Отзывы</a>
+              <%= link_to 'Отзывы', reviews_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Вопрос-Ответ</a>
@@ -41,5 +41,28 @@
       </nav>
     </div>
     <%= yield %>
+    <div width="100%" style="background-color: #262626;">
+      <div class="container" style="">
+        <div class="container-fluid" style="padding-top: 50px; padding-bottom: 50px;">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-3">
+              <p class="text-center">
+                <font size="2" color="#DBDBDB">info@triada.center</font>
+              </p>
+            </div>
+            <div class="col-3">
+              <p class="text-center">
+                <font size="2" color="#DBDBDB">8 (812) 123-45-67</font>
+              </p>
+            </div>
+            <div class="col-3">
+              <p class="text-center">
+                <font size="2" color="#DBDBDB">vk.com/triada_center</font>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
