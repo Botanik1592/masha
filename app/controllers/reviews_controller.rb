@@ -1,3 +1,5 @@
 class ReviewsController < ApplicationController
-  def index; end
+  def index
+    @reviews = true
+  end
 end
