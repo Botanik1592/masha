@@ -28,8 +28,14 @@
             <% if @home %><li class="nav-item active"><% else %><li class="nav-item"><% end %>
               <%= link_to 'Главная', root_path, class: "nav-link" %>
             </li>
-            <% if @reviews %><li class="nav-item active"><% else %><li class="nav-item"><% end %>
-              <%= link_to 'Отзывы', reviews_path, class: "nav-link" %>
+            <li class="nav-item">
+              <a class="nav-link" href="#specialists">Специалисты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#appointment">Запись на прием</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Вопрос-Ответ</a>
